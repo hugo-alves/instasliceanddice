@@ -1,4 +1,5 @@
 ActiveAdmin.register Slyce do
+  permit_params :instaurl
 
 
   # See permitted parameters documentation:
