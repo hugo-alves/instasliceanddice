@@ -3,3 +3,15 @@
 $brand-primary: #428bca;
 $body-bg: #efefee;
 $text-color: #333332;
+
+html, body, .container{
+    height: 100%;
+}
+.container{
+    display: table;
+    vertical-align: middle;
+}
+.vertical-center-row{
+    display: table-cell;
+    vertical-align: middle;
+}

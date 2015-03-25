@@ -21,6 +21,8 @@ Rails.application.routes.draw do
   get "pins/busca", to: "pins#busca", as: "busca"
   get "pins/fromlink", to: "pins#fromlink", as: "sacaimagemdolinkget"    
   post "pins/fromlink", to: "pins#fromlink", as: "sacaimagemdolinkpost"
+  get "pins/oridomi", to: "pins#oridomi", as: "oridomi"
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
