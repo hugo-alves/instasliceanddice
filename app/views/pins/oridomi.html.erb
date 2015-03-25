@@ -1,21 +1,24 @@
 <style >
   .overlay { 
   	background: url("<%= cloudinary_url("finais/0.9063961155570877.png", :resource_type => :image) %>");
+  	background-size: 100%;
   }
 </style>
 
 
-<div class="container">
-    <div class="col-md-12">
-        	<button id="button" onclick="exemplo.stairs(43, 'left');">vista da esquerda</button>
-			<button id="button" onclick="exemplo.accordion(-45);">vista do centro</button>
-			<button id="button" onclick="exemplo.stairs(43, 'right')">vista da direita</button>
+<div class="container-fluid">
+	<div class="">
+	    <div class="col-md-12">
+	        	<button id="button" onclick="exemplo.stairs(43, 'left');">vista da esquerda</button>
+				<button id="button" onclick="exemplo.accordion(-45);">vista do centro</button>
+				<button id="button" onclick="exemplo.stairs(43, 'right')">vista da direita</button>
 
-		<div class= "paper"> 
-			<div class="overlay">
+			<div class= "paper"> 
+				<div class="overlay">
+				</div>
 			</div>
-		</div>
-    </div>
+	    </div>
+	</div>
 </div> <!-- /.container -->
 
 
