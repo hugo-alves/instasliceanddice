@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'landings#index'
 
+
+
+  get "pins/busca", to: "pins#busca", as: "busca"
+  get "pins/fromlink", to: "pins#fromlink", as: "sacaimagemdolinkget"    
+  post "pins/fromlink", to: "pins#fromlink", as: "sacaimagemdolinkpost"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
