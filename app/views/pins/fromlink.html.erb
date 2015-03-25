@@ -1,0 +1,44 @@
+  
+<h2>"MAGIA? Não estou a ver magia nenhuma!"</h2>
+<h2>Experimenta clicar num dos botões por debaixo da imagem!</h2>
+  <div class= "paper"> 
+    <div class="overlay">
+    
+    </div>
+  </div>
+
+
+<button id="button" onclick="exemplo.stairs(44, 'left');">vista da esquerda</button>
+
+<button id="button" onclick="exemplo.accordion(-45);">vista do centro</button>
+
+<button id="button" onclick="exemplo.stairs(45, 'right')">vista da direita</button>
+
+<!-- 
+<%= cl_image_tag("finais/#{@nomedaimagem}.png", :alt => "imagem") %>
+
+ -->
+
+<style >
+  .overlay { 
+  	background: url("<%= cloudinary_url("finais/#{@nomedaimagem}.png", :resource_type => :image) %>");
+  }
+</style>
+
+
+
+<script>
+	var exemplo = new OriDomi('.paper', {
+		speed:           3000,  
+		ripple:          4,     // backwards ripple effect when animating
+		perspective:     5000,   // smaller values exaggerate 3D distortion
+		maxAngle:        180,    //fold range
+		vPanels:         8, 
+		hPanels:         1, 
+		shading:         'soft', 
+		touchEnabled:    true, 
+		touchSensitivity: .10
+	});
+	
+
+</script>

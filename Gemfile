@@ -53,6 +53,11 @@ gem 'bootstrap-sass-extras'
 gem 'tzinfo-data'
 gem 'validates_formatting_of'
 
+gem 'cloudinary'
+gem 'rmagick', '~> 2.13.4'
+gem "mini_magick"
+gem 'oridomi-rails'
+
 group :development do
   gem 'better_errors'
 end

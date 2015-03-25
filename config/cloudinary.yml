@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hqbppjpvr
+  api_key: '135379223869352'
+  api_secret: Zp1FvzsEEVlQLTWTLDloJcSg0Qc
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hqbppjpvr
+  api_key: '135379223869352'
+  api_secret: Zp1FvzsEEVlQLTWTLDloJcSg0Qc
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hqbppjpvr
+  api_key: '135379223869352'
+  api_secret: Zp1FvzsEEVlQLTWTLDloJcSg0Qc
+  enhance_image_tag: true
+  static_image_support: false
