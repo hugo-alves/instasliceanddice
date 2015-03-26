@@ -5,20 +5,21 @@
 
 .paper {
   background-color: #FFFFFF;
-  width: auto;
+  width: 100% ;
   padding: 4em;
   margin: 1%;
   position: relative;
-  height: auto;
+  height:  50% !important;
   border: 0px solid #CCC6A1;
 }
 
-.paper div {
-  text-align: center;
-}
+// .paper div {
+//   text-align: center;
+// }
 
 .overlay {
   position: absolute;
+  height: auto;
   top: 0;
   left: 0;
   right: 0;
