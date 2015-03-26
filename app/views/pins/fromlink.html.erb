@@ -1,18 +1,25 @@
-  
 <h2>"MAGIA? Não estou a ver magia nenhuma!"</h2>
 <h2>Experimenta clicar num dos botões por debaixo da imagem!</h2>
-  <div class= "paper"> 
-    <div class="overlay">
-    
-    </div>
-  </div>
+<div class="container-fluid">
+	<div class="row">
+	    <div class="col-md-12 text-center">
+		    <div id="selector" class="btn-group">
+			    <a onclick="exemplo.stairs(43, 'left');" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-hand-left"></span>Vista da esquerda</a>
+			    <a onclick="exemplo.accordion(-45);" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-hand-up"></span> Vista do centro</a>
+			    <a onclick="exemplo.stairs(43, 'right');" class="btn btn-lg btn-primary">Vista da direita <span class="glyphicon glyphicon-hand-right"></span></a>
+			</div>
+		</br>
+		</br>
+
+				<div class= "paper"> 
+					<div class="overlay">
+					</div>
+				</div>
 
 
-<button id="button" onclick="exemplo.stairs(44, 'left');">vista da esquerda</button>
-
-<button id="button" onclick="exemplo.accordion(-45);">vista do centro</button>
-
-<button id="button" onclick="exemplo.stairs(45, 'right')">vista da direita</button>
+	    </div>
+	</div>
+</div>
 
 <!-- 
 <%= cl_image_tag("finais/#{@nomedaimagem}.png", :alt => "imagem") %>
@@ -21,7 +28,11 @@
 
 <style >
   .overlay { 
-  	background: url("<%= cloudinary_url("finais/#{@nomedaimagem}.png", :resource_type => :image) %>");
+  	background: url("<%= cloudinary_url("finais/#{@nomedaimagem}.png", :resource_type => :image) %>") no-repeat;
+  	background-size: 100%;
+  }
+  .paper {
+  	height: 50vw;
   }
 </style>
 
@@ -39,6 +50,4 @@
 		touchEnabled:    true, 
 		touchSensitivity: .10
 	});
-	
-
 </script>

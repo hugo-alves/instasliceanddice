@@ -1,2 +1,16 @@
-<h1>Pins#create</h1>
-<p>Find me in app/views/pins/create.html.erb</p>
+<h1>Abre o <%= link_to 'instagram', "http://instagram.com", :target => "_blank" %> e copia o link de duas fotos que gostes muito para os campos abaixo</h1>
+<h2>(ainda não funciona com contas privadas, em breve...)</h2>
+
+</br>
+</br>
+</br>
+
+<div>	
+	<%= form_tag({controller: "pins", action: "fromlink", method: "get"}) do %>
+	<%= label_tag(:q, "Link da primeira foto:") %>
+	<%= text_field_tag(:q) %>
+	<%= label_tag(:p, "Link da segunda foto:") %>
+	<%= text_field_tag(:p) %>
+	<%= submit_tag("Fazer magia") %>
+	<% end %>
+</div>

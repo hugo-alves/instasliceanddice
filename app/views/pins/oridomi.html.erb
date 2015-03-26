@@ -2,19 +2,22 @@
   .overlay { 
   /*	background: url("<%= cloudinary_url("finais/0.9063961155570877.png", :resource_type => :image) %>") no-repeat;*/
   	background: url("http://portugalstartups.com/wp-content/uploads/2015/03/jobbox_founders.jpg") no-repeat;
-
-
   	background-size: 100%;
+  }
+  .paper {
+  	height: 64vw;
   }
 </style>
 
 
 <div class="container-fluid">
 	<div class="row">
-	    <div class="col-md-12">
-	        	<button id="button" onclick="exemplo.stairs(43, 'left');">vista da esquerda</button>
-				<button id="button" onclick="exemplo.accordion(-45);">vista do centro</button>
-				<button id="button" onclick="exemplo.stairs(43, 'right')">vista da direita</button>
+	    <div class="col-md-12 text-center">
+	    <div id="selector" class="btn-group">
+		    <a onclick="exemplo.stairs(43, 'left');" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Vista da esquerda</a>
+		    <a onclick="exemplo.accordion(-45);" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-arrow-up"></span> Vista do centro</a>
+		    <a onclick="exemplo.stairs(43, 'right');" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-arrow-right"></span> Vista da direita</a>
+		</div></br></br>
 				<div class= "paper"> 
 					<div class="overlay">
 					</div>
