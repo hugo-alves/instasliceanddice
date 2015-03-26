@@ -14,11 +14,11 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'landings#index'
+  root 'pins#create'
 
 
 
-  get "pins/busca", to: "pins#busca", as: "busca"
+  get "pins/create", to: "pins#create", as: "create"
   get "pins/fromlink", to: "pins#fromlink", as: "sacaimagemdolinkget"    
   post "pins/fromlink", to: "pins#fromlink", as: "sacaimagemdolinkpost"
   get "pins/oridomi", to: "pins#oridomi", as: "oridomi"
