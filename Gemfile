@@ -57,6 +57,7 @@ gem 'cloudinary'
 gem 'rmagick', '~> 2.13.4'
 gem "mini_magick"
 gem 'oridomi-rails'
+gem 'instagram', '~> 1.1.4'
 
 group :development do
   gem 'sqlite3'
