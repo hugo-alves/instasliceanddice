@@ -26,14 +26,14 @@ class PinsController < ApplicationController
 	    #CORTA AS FATIAS DA PRIMEIRA IMAGEM E GUARDA-A NO DISCO
 	    for i in 0..3
 	      @image = MiniMagick::Image.open(@short)
-	      @image.crop("160x640+#{i * 160}+0")
+	      @image.crop("270x1080+#{i * 270}+0")
 	      @image.write "app/assets/images/cone" + i.to_s() + ".png"
 	    end
 
 	    #CORTA AS FATIAS DA SEGUNDA IMAGEM E GUARDA-A NO DISCO
 	    for i in 0..3
 	      @image = MiniMagick::Image.open(@pissa)
-	      @image.crop("160x640+#{i * 160}+0")
+	      @image.crop("270x1080+#{i * 270}+0")
 	      @image.write "app/assets/images/cilindro" + i.to_s() + ".png"
 	    end
 
